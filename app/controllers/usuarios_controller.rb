@@ -26,11 +26,11 @@ class UsuariosController < ApplicationController
   def new
     @usuario = Usuario.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @usuario }
+   #   respond_to do |format|
+    #   format.html # new.html.erb
+    #   format.json { render json: @usuario }
     end
-  end
+ 
 
   # GET /usuarios/1/edit
   def edit
@@ -42,15 +42,20 @@ class UsuariosController < ApplicationController
   def create
     @usuario = Usuario.new(params[:usuario])
 
-    respond_to do |format|
-      if @usuario.save
-        format.html { redirect_to @usuario, notice: 'Usuario was successfully created.' }
-        format.json { render json: @usuario, status: :created, location: @usuario }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @usuario.errors, status: :unprocessable_entity }
-      end
-    end
+if @usuario.save
+    redirect_to root_url, :notice => "Signed up!"
+  else
+    render :new
+  end
+   #  respond_to do |format|
+    #   if @usuario.save
+    #     format.html { redirect_to @usuario, notice: 'Usuario was successfully created.' }
+    #     format.json { render json: @usuario, status: :created, location: @usuario }
+    #   else
+    #     format.html { render action: "new" }
+    #     format.json { render json: @usuario.errors, status: :unprocessable_entity }
+    #   end
+    #   end
   end
 
   # PUT /usuarios/1
@@ -80,4 +85,4 @@ class UsuariosController < ApplicationController
       format.json { head :no_content }
     end
   end
-end
+ end
