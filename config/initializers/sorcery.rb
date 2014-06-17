@@ -6,7 +6,7 @@ Rails.application.config.sorcery.submodules = [:remember_me]
 
 # Here you can configure each submodule's features.
 
-user.username_attribute_name = :email
+# user.username_attribute_name = :email
 
 Rails.application.config.sorcery.configure do |config|
   # -- core --
