@@ -1,7 +1,7 @@
 <%= form_for(@usuario) do |f|  %>
 <% if @usuario.errors.any? %>
 <div id="error_explanation">
-	<h2><%= pluralize(@usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+	<h2><%= pluralize(@usuario.errors.count, "error") %> ..verifica tus datos antes de registrarte :</h2>
 
 	<ul>
 		<% @usuario.errors.full_messages.each do |msg| %>
@@ -62,7 +62,7 @@
 			<div class="col-sm-offset-2 col-sm-10">
 				</br>
 				<div class="actions" >
-					<%= f.submit "Registrate", class: "btn btn-info btn-sm" %>
+					<%= f.submit "Regístrate", class: "btn btn-info btn-sm" %>
 				</div>
 			</div>
 		</div>
