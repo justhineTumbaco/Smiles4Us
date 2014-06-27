@@ -1,0 +1,45 @@
+#bg1{
+	background-color: #617A8D;
+	font-family: "Helvetica";
+}
+
+#sesion{
+	background-color: rgba(99,174,189,0.3);
+	width: 400px;
+	height: 250px;
+	border-radius: 20px;
+	margin: 0 auto;
+	padding-top: 7px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+header{
+	margin-top: 100px;
+}
+
+header hgroup h1{
+	color: #6FBBCA;
+	text-shadow: 0px 0px 10px rgba(220,220,220,0.5);
+	font-size: 60px;
+}
+
+section{
+	margin-top: 40px;
+}
+
+nav{
+	margin-top: 70px;
+	margin-right: 30px;
+	text-align: center;	
+}
+
+nav ul li{
+	display: inline-block;
+	color: #6FBBCA;
+	margin-right: 10px;
+}
+
+nav ul li a{
+	color: #6FBBCA;
+}
