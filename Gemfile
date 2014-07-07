@@ -19,16 +19,14 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   gem 'twitter-bootstrap-rails'
-  gem 'execjs', '1.2.4'
+  gem 'execjs', '2.2.1'
+
 end
 
 gem 'jquery-rails'
 gem 'sorcery'
 
-group :production do
-  gem 'pg',   '0.15.1'
-  gem 'rails_12factor', '0.0.2'
-end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
