@@ -1,5 +1,11 @@
 Smiles4usv3::Application.routes.draw do
-  get "users/new"
+  get "password_resets/create"
+
+  get "password_resets/edit"
+
+  get "password_resets/update"
+
+  get "usuarios/new"
 
   get "sessions/new"
 
@@ -24,6 +30,8 @@ resources :sessions
 
   resources :posts
   resources :sesion
+  
+  resources :password_resets
  
 
   # The priority is based upon order of creation:

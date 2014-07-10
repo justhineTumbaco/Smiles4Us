@@ -9,5 +9,8 @@ class SesionController < ApplicationController
   def registrarse
   end
   
-  
+  def destroy
+  logout
+  redirect_to root_url, :notice => "Logged out!"
+end
 end

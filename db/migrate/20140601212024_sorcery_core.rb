@@ -11,4 +11,7 @@ class SorceryCore < ActiveRecord::Migration
 
     add_index :usuarios, :email, unique: true
   end
+  
+  
+  
 end
