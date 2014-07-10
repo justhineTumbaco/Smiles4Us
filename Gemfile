@@ -20,6 +20,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'twitter-bootstrap-rails'
   gem 'execjs', '2.2.1'
+  gem 'yaml_db'
 
 end
 
