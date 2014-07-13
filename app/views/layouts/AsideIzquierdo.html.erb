@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Red social de portafolio">
+		<meta name="author" content="justhine Tumbaco">
+	<!--	<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet"> -->
+		<title>Smiles4us</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		
+	</head>
+
+	<body>
+
+		<% content_for :aside do %>
+			<aside> 
+				<br><br><br>nombre del usuario<br><br>
+		 		<div class="btn-group-vertical">
+		 		 <button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-bell"></span><center> Notificaciones </center></button>
+		 		 <button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-pencil"></span><center> Informacion  </center></button>
+		 		 <button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-star"><center> favorito </center></button>
+		 		 <button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-th-large"><center> galeria </center></button>
+		 		  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-list-alt"><center>
+		     		 categoria</center>
+		     		 <span class="caret"></span><br>
+				    </button>
+				     <ul class="dropdown-menu" role="menu">
+				      <li><a href="#">FanArt</a></li>
+				      <li><a href="#">Fotografia</a></li>
+				      <li><a href="#">DigitalArt</a></li>
+				    </ul>
+				</div>
+
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		    <!-- Include all compiled plugins (below), or include individual files as needed -->
+		    <script src="js/bootstrap.min.js"></script>
+ 	</aside>
+
+
+
+
+<% end %>
+
+		<%= yield :aside %>
+
+		<%= yield %>
+
+
+	</body>
+</html>
+
