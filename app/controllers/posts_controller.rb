@@ -2,8 +2,6 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   before_filter :require_login, :only => :secret
-  layout "AsideIzquierdo"
-  
   def index
     @posts = Post.all
 
