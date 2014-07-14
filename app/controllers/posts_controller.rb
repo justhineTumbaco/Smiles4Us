@@ -1,6 +1,18 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
+  
+  layout "application"
+
+  def menu
+   
+    render layout: "menu"
+   
+  end
+       
+   
+  
+  
   before_filter :require_login, :only => :secret
   def index
     @posts = Post.all
