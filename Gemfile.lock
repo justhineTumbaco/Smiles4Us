@@ -121,7 +121,6 @@ GEM
     uglifier (2.5.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    yaml_db (0.2.3)
 
 PLATFORMS
   ruby
@@ -137,4 +136,3 @@ DEPENDENCIES
   sqlite3
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
-  yaml_db
