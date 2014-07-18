@@ -1,4 +1,6 @@
 Smiles4usv3::Application.routes.draw do
+  get "favoritos/favoritos"
+
   get "nosotros/index"
 
   get "password_resets/create"
