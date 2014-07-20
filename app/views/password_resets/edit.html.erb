@@ -1,4 +1,4 @@
-h1>Elija una nueva contraseña</h1>
+<h1>Elija una nueva contraseña</h1>
 <%= form_for @usuario, :url => password_reset_path(@usuario), :html => {:method => :put} do |f| %>
   <% if @usuario.errors.any? %>
     <div id="error_explanation">
