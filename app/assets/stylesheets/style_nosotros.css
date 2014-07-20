@@ -13,7 +13,7 @@ esto es necesario para la pagina nosotros*/
 
 /* ============================= main layout ====================== */
 
-h1{ padding:98px 0 0 72px}
+h1{ padding:98px 0 0 '72'px}
 h2{ font-size:34px; color:#222; line-height:55px; background: url(../images/bg_box1.png) 0 0 no-repeat; padding-left:22px; display:block; overflow:hidden}
 
 /* ============================= slider ====================== */
