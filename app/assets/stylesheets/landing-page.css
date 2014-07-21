@@ -154,7 +154,7 @@ p.copyright {
 .intro-message-session {
 	position: relative;
 	padding-top: 10%;
-	padding-bottom: 20%;
+	padding-bottom: 0%;
 }
 
 .intro-message-session > h1 {
