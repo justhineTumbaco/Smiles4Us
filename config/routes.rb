@@ -1,4 +1,6 @@
 Smiles4usv3::Application.routes.draw do
+  resources :comentarios
+
   get "favoritos/favoritos"
 
   get "nosotros/index"
