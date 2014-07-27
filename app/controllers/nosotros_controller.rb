@@ -1,4 +1,4 @@
 class NosotrosController < ApplicationController
-  def index_nosotros
+  def index
   end
 end
