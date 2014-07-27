@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
-  attr_accessible :photo,:titulo
+  attr_accessible :photo,:titulo, :usuario_id
+ belongs_to :usuario
   FOTOS = File.join Rails.root, 'public','photo_store'
   after_save :guardar_foto
   def photo=(file_data)
