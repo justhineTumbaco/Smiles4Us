@@ -1,9 +1,13 @@
 Smiles4usv3::Application.routes.draw do
+  get "nosotros/index"
+
+  get "contacto/index"
+
   resources :comentarios
+
 
   get "favoritos/favoritos"
 
-  get "nosotros/index"
 
   get "password_resets/create"
 
