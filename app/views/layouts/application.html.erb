@@ -11,11 +11,53 @@
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 		<%= javascript_include_tag 'cufon-replace', 'data-turbolinks-track' => true %>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="bootstrap-responsive.css">
+<link rel="stylesheet" href="prettyPhoto.css" />
+<link rel="stylesheet" href="custom-styles.css">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="bootstrap.js"></script>
+<script src="jquery.prettyPhoto.js"></script>
+<script src="jquery.custom.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+    $("#btn-blog-next").click(function () {
+      $('#blogCarousel').carousel('next')
+    });
+     $("#btn-blog-prev").click(function () {
+      $('#blogCarousel').carousel('prev')
+    });
+
+     $("#btn-client-next").click(function () {
+      $('#clientCarousel').carousel('next')
+    });
+     $("#btn-client-prev").click(function () {
+      $('#clientCarousel').carousel('prev')
+    });
+    
+    $('#myCarousel').carousel({
+        interval: 4000
+    });
+    $('#myCarousel').carousel('cycle');
+});
+
+</script>
+	
 	</head>
 
 	<body>
+		
+		
 
 		<% content_for :navbar do %>
+		
+		
 
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
