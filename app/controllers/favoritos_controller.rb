@@ -1,4 +1,4 @@
 class FavoritosController < ApplicationController
-	def favoritos
+	def index
 	end
 end
