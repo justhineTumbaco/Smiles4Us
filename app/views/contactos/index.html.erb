@@ -1,0 +1,26 @@
+<br />
+
+<div class="container">
+
+  
+  
+<h1>Hablemos...</h1>
+
+<table class= 'modal-body'>
+
+<% @contactos.each do |contacto| %>
+  <tr>
+    <td><b>Email: </b><%= contacto.email %></td>
+    
+  </tr>
+  <tr>
+  <td><b>Comentario: </b><%= contacto.comentario %></td>
+</tr>
+<% end %>
+</table>
+
+<br />
+<a class="btn btn-default" href="/contactos/new" role="button"><span class="glyphicon glyphicon-comment" > </span> Nuevo Comentario</a>
+
+</div>
+</div>

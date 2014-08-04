@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(:version => 20141007212026) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "contactos", :force => true do |t|
+    t.string   "email"
+    t.string   "comentario"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "posts", :force => true do |t|
     t.string   "titulo"
     t.string   "extension"

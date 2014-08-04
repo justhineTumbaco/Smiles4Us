@@ -1,4 +1,6 @@
 Smiles4usv3::Application.routes.draw do
+  resources :contactos
+
   get "nosotros/index"
 
   get "contacto/index"

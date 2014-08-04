@@ -1,0 +1,24 @@
+<div class="container">
+	<div class="row" draggable="true">
+<p id="notice"><%= notice %></p>
+<br />
+
+<p>
+  <b>Email:</b>
+
+  <%= @contacto.email %>
+</p>
+<br />
+
+<p>
+  <b>Comentario:</b>
+  <%= @contacto.comentario %>
+</p>
+<br />
+<br />
+
+
+<%= link_to 'Editar', edit_contacto_path(@contacto) %> |
+<%= link_to 'Finalizar', contactos_path %>
+</div>
+</div>
