@@ -1,5 +1,5 @@
 class Usuario < ActiveRecord::Base
-
+ has_many :posts
  authenticates_with_sorcery!
   attr_accessible :crypted_password, :email, :salt, :username, :password_confirmation , :password
   validates_confirmation_of :password, message: "Ambos campos deben coincidir", if: :password
